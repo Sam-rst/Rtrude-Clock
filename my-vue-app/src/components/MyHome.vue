@@ -1,12 +1,15 @@
 <template>
-    <h1>Je suis un super titre</h1>
+    <h1>{{ msg }}</h1>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'MyHome',
   props: {
     msg: String
   }
 }
 </script>
+<style scoped>
+
+</style>

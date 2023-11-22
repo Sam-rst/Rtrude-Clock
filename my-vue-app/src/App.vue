@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <Home msg="Welcome to Your Vue.js App"/>
+  <MyHome msg="Ceci est le projet"/>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import MyHome from './components/MyHome.vue';
 
 export default {
   name: 'App',
   components: {
-    Home
+    MyHome
   }
 }
 </script>
