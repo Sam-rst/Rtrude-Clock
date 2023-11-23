@@ -1,22 +1,24 @@
 <template>
-  <NavBar msg="Bonjour" />
-  <MyHome msg="Ceci est le projet"/>
-  <MyFooter msg="Ceci est mon pied"/>
+  <body>
+    <NavBar />
+    <MyHome msg="Ceci est le projet" />
+    <MyFooter />
+  </body>
 </template>
 
 <script>
-import MyFooter from './components/MyFooter.vue';
-import MyHome from './components/MyHome.vue';
-import NavBar from './components/NavBar.vue';
+import NavBar from "./components/NavBar.vue";
+import MyHome from "./components/MyHome.vue";
+import MyFooter from "./components/MyFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MyHome,
     NavBar,
-    MyFooter
-  }
-}
+    MyHome,
+    MyFooter,
+  },
+};
 </script>
 
 <style>
@@ -26,6 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
