@@ -1,24 +1,27 @@
 <template>
-    <footer class="footer bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>À propos de nous</h5>
-                    <p>Votre texte ici...</p>
-                </div>
-                <div class="col-md-6">
-                    <h5>Contactez-nous</h5>
-                    <p>Email: info@example.com</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-center">&copy; 2023 Votre Nom</p>
-                </div>
+    <!-- Pied de page fixé en bas de la page -->
+    <footer class="footer mt-auto py-3" style="background-color:#f8f9fa ;">
+        <div class="d-flex justify-content-between align-items-center mx-auto py-4 flex-wrap" style="width: 80%">
+            <a href="/#" class="d-flex align-items-center p-0 text-dark">
+                <img alt="logo" src="../assets/logo.png" width="30px" />
+                <span class="ms-4 h5 font-weight-bold">Devwares</span>
+            </a>
+            <small>&copy; Devwares, 2020. All rights reserved.</small>
+            <div>
+                <button class="btn btn-dark btn-flat p-2 ">
+                    <img src="../assets/logo.png" width="20px" height="20px"/>
+                </button>
+                <button class="btn btn-dark btn-flat p-2 m-1">
+                    <img src="../assets/logo.png" width="20px" height="20px"/>
+                </button>
+                <button class="btn btn-dark btn-flat p-2 ">
+                    <img src="../assets/logo.png" width="20px" height="20px"/>
+                </button>
             </div>
         </div>
     </footer>
 </template>
+
 
 
 <script>
