@@ -1,15 +1,19 @@
 <template>
+  <NavBar msg="Bonjour" />
   <MyHome msg="Ceci est le projet"/>
+  
 </template>
 
 <script>
 import MyHome from './components/MyHome.vue';
+import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
   components: {
-    MyHome
-  }
+    MyHome,
+    NavBar
+}
 }
 </script>
 
