@@ -1,6 +1,8 @@
 <template>
   <body>
-    <NavBar />
+    <header>
+      <NavBar />
+    </header>
     <MyHome msg="Ceci est le projet" />
     <MyFooter />
   </body>
