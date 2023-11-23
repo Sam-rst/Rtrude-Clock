@@ -4,6 +4,7 @@
 
     <NavBar />
     <MyHome msg="Ceci est le projet" />
+    <MyLiaison />
     <MyFooter />
 
   </body>
@@ -15,12 +16,14 @@
 import NavBar from "./components/NavBar.vue";
 import MyHome from "./components/MyHome.vue";
 import MyFooter from "./components/MyFooter.vue";
+import MyLiaison from "./components/MyLiaison.vue";
 
 export default {
   name: "App",
   components: {
     NavBar,
     MyHome,
+    MyLiaison,
     MyFooter,
   },
 };
@@ -28,11 +31,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 </style>
