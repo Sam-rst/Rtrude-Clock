@@ -1,10 +1,11 @@
 <template>
   <NavBar msg="Bonjour" />
   <MyHome msg="Ceci est le projet"/>
-  
+  <MyFooter msg="Ceci est mon pied"/>
 </template>
 
 <script>
+import MyFooter from './components/MyFooter.vue';
 import MyHome from './components/MyHome.vue';
 import NavBar from './components/NavBar.vue';
 
@@ -12,8 +13,9 @@ export default {
   name: 'App',
   components: {
     MyHome,
-    NavBar
-}
+    NavBar,
+    MyFooter
+  }
 }
 </script>
 
