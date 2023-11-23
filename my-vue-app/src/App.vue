@@ -1,15 +1,18 @@
 <template>
   <MyHome msg="Ceci est le projet"/>
+  <MyFooter msg="Ceci est mon pied"/>
 </template>
 
 <script>
+import MyFooter from './components/MyFooter.vue';
 import MyHome from './components/MyHome.vue';
 
 export default {
   name: 'App',
   components: {
-    MyHome
-  }
+    MyHome,
+    MyFooter
+}
 }
 </script>
 
