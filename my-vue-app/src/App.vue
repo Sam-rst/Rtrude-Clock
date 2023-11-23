@@ -1,14 +1,17 @@
 <template>
+
   <body>
-    <header>
-      <NavBar />
-    </header>
+
+    <NavBar />
     <MyHome msg="Ceci est le projet" />
     <MyFooter />
+
   </body>
+
 </template>
 
 <script>
+
 import NavBar from "./components/NavBar.vue";
 import MyHome from "./components/MyHome.vue";
 import MyFooter from "./components/MyFooter.vue";
@@ -21,6 +24,7 @@ export default {
     MyFooter,
   },
 };
+
 </script>
 
 <style>
