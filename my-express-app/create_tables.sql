@@ -1,0 +1,34 @@
+CREATE TABLE Genre(
+   id INT NOT NULL AUTO_INCREMENT,
+   libelle VARCHAR(50) UNIQUE,
+   CONSTRAINT pk_genre PRIMARY KEY(id)
+);
+
+CREATE TABLE Pays(
+   id INT NOT NULL AUTO_INCREMENT,
+   code CHAR(3) UNIQUE,
+   nom VARCHAR(50),
+   CONSTRAINT pk_pays PRIMARY KEY(id)
+);
+
+
+CREATE TABLE Users(
+   id INT NOT NULL AUTO_INCREMENT,
+   nom VARCHAR(50),
+   prenom VARCHAR(50),
+   email VARCHAR(50),
+   telephone CHAR(10),
+   paysID INT NOT NULL,
+   genreID INT NOT NULL,
+   CONSTRAINT pk_users PRIMARY KEY(id),
+   CONSTRAINT fk_Users_Pays FOREIGN KEY(paysID) REFERENCES Pays(id),
+   CONSTRAINT fk_Users_Genre FOREIGN KEY(genreID) REFERENCES Genre(id)
+);
+
+CREATE TABLE Cards(
+   id INT NOT NULL AUTO_INCREMENT,
+   titre VARCHAR(50),
+   chemin VARCHAR(50),
+   description TEXT,
+   CONSTRAINT pk_Cards PRIMARY KEY(id)
+);
