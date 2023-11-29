@@ -13,7 +13,6 @@
 import NavBar from "./components/NavBar.vue";
 import MyHome from "./components/MyHome.vue";
 import MyFooter from "./components/MyFooter.vue";
-import MyLiaison from "./components/MyLiaison.vue";
 
 export default {
   name: "App",
