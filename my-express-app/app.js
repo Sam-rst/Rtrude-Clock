@@ -3,7 +3,6 @@ const cors = require('cors');
 const app = express();
 
 const initializeDatabase = require('./myDB');
-// const insertValuesInPays = require('./myDB');
 const setupRoutes = require('./routes');
 
 app.use(cors({
@@ -14,8 +13,6 @@ app.use(cors({
 
 const db = initializeDatabase();
 setupRoutes(app, db);
-// stopDatabase(db)
-
 
 const items = [
   { id: 1, name: 'Item 1' },
