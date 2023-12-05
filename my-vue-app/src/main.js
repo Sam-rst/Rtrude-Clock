@@ -5,4 +5,5 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
+
 createApp(App).mount('#app')
