@@ -30,7 +30,7 @@ function insertUser(username, email, password) {
             console.error(err.message);
             return;
         }
-        console.log('Mot de passe hashé : ' + hash)
+        // console.log('Mot de passe hashé : ' + hash)
 
         const query = 'INSERT INTO user (username, email, password) VALUES (?, ?, ?)';
         db.run(query, [username, email, hash], function (err) {
@@ -62,12 +62,12 @@ function getUserByUsername(username, callback) {
             console.error(err.message);
 
         } else if (!row) {
-            console.log('User not found.')
-            callback(null, false);
+            // console.log('User not found.')
+            return(null, false);
 
         } else {
-            console.log('User found : ', row);
-            callback(row);
+            // console.log('User found : ', row);
+            return(row);
         }
     })
 }
@@ -79,25 +79,30 @@ function getUserById(id, callback) {
             console.error(err.message);
 
         } else if (!row) {
-            console.log('User not found.')
+            // console.log('User not found.')
             callback(null, false);
 
         } else {
-            console.log('User found : ', row);
+            // console.log('User found : ', row);
             callback(row);
         }
     })
 }
 
 // Fonction pour vérifier le mot de passe lors de la connexion
-function verifyPassword(user = this, password, callback) {
+function verifyPassword(password, user, callback) {
+    /* 1ERE VERSION : password n'est pas hashé et user.password est hashé */
     bcrypt.compare(password, user.password, function (err, isMatch) {
-        if (err) console.error(err.message);
-        if (isMatch) {
-            console.log("Correct password")
-        }
-        callback(null, isMatch);
-    });
+            if (err) {
+                    console.error(err.message);
+                    return callback(err);
+                }
+            
+                // Appeler le callback avec le résultat de la comparaison
+                return(isMatch);
+            });
+    /* 2EME VERSION : password et user.password sont hashés */
+    // callback(password == user.password);
 }
 
 // Exports des fonctions
