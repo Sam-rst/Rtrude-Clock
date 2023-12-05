@@ -1,9 +1,9 @@
 <template>
-  <header>
-    <NavBar />
-  </header>
+  <div>
+    <header>
+      <NavBar />
+    </header>
 
-  <body>
     <main>
       <MyHome />
       <MyLiaison />
@@ -11,7 +11,7 @@
     <footer class="footer-section">
       <MyFooter />
     </footer>
-  </body>
+  </div>
 </template>
 
 
@@ -30,8 +30,6 @@ export default {
   },
 
 };
-
-
 </script>
 
 <head>
@@ -41,16 +39,14 @@ export default {
 
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /* height: 100vh;
-  overflow-y: auto; */
 }
-
 
 :root {
   --menu-width: 37.5em;
@@ -63,11 +59,14 @@ export default {
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, #102eff, #d2379b);
+  /* background: linear-gradient(45deg, #102eff, #d2379b); */
   font-family: 'Roboto', sans-serif;
   height: 100vh;
-  overflow: hidden;
   width: 100vw;
+}
+header{
+  background: linear-gradient(45deg, #102eff, #d2379b);
+  z-index: 20000;
 }
 
 nav {
@@ -80,7 +79,7 @@ nav {
   margin: 0px auto;
   perspective: 2000px;
   flex-wrap: wrap;
-  top: 3em;
+
 }
 
 nav .menu-item {
@@ -96,6 +95,7 @@ nav .menu-item {
   perspective: 200px;
   letter-spacing: 0.5px;
   min-height: 7.5em;
+  align-items: center;
 }
 
 nav .menu-text,
@@ -235,6 +235,7 @@ nav .menu-item:nth-of-type(4):hover~#sub-menu-container #sub-menu-holder {
 .menu-item:hover .sub-menu {
   opacity: 1;
   margin-left: 0;
+  z-index: 11000;
 }
 
 .menu-item:hover~#sub-menu-container #sub-menu-holder {
@@ -306,6 +307,8 @@ nav .menu-item:nth-of-type(4):hover~#sub-menu-container #sub-menu-holder {
   position: relative;
   top: -1px;
 }
+
+
 
 /* Base Icon Style */
 .icon-box.gb .icon i:before {
@@ -666,6 +669,7 @@ a.more {
   background: #3b5d50 !important;
   padding-top: 20px;
   padding-bottom: 20px;
+  z-index: 1000;
 }
 
 .custom-navbar .navbar-brand {
@@ -679,6 +683,11 @@ a.more {
 
 .custom-navbar .navbar-toggler {
   border-color: transparent;
+  z-index: 1001;
+}
+
+.custom-navbar .navbar-collapse {
+  z-index: 999; /* Ajoutez ou ajustez ce z-index */
 }
 
 .custom-navbar .navbar-toggler:active,
@@ -1655,4 +1664,9 @@ textarea {
   border-radius: 50%;
   background: rgba(59, 93, 80, 0.2);
 }
+
+
+
+
+
 </style>
