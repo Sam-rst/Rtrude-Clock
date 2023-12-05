@@ -39,7 +39,6 @@ export default {
 
 
 <style>
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -56,18 +55,29 @@ export default {
   --item-width: calc(var(--menu-width) / var(--items));
 }
 
-body {
+/* body {
   margin: 0;
   padding: 0;
   /* background: linear-gradient(45deg, #102eff, #d2379b); */
-  font-family: 'Roboto', sans-serif;
+/* font-family: 'Roboto', sans-serif;
   height: 100vh;
   width: 100vw;
   overflow-x: hidden;
+} */
+
+header {
+  background: linear-gradient(45deg, #6ba991, #1a2924);
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  /* Largeur de la barre de navigation */
+  position: fixed;
 }
-header{
-  background: linear-gradient(45deg, #102eff, #d2379b);
+
+main {
+  margin-top: 100px;
 }
+
 
 nav {
   width: var(--menu-width);
@@ -75,11 +85,18 @@ nav {
   transform-style: preserve-3d;
   justify-content: space-evenly;
   position: relative;
-  z-index: 2;
+  z-index: 1000;
   margin: 0px auto;
   perspective: 2000px;
   flex-wrap: wrap;
 
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    position: relative;
+    /* Ajustez l'espacement pour les écrans plus petits */
+  }
 }
 
 nav .menu-item {
@@ -632,7 +649,7 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
 /* fin css tiny-slider */
 
 
-body {
+/* body {
   overflow-x: hidden;
   position: relative;
 }
@@ -644,7 +661,8 @@ body {
   color: #6a6a6a;
   font-size: 14px;
   background-color: #eff2f1;
-}
+  margin-top: 1cm;
+} */
 
 a {
   text-decoration: none;
@@ -686,7 +704,8 @@ a.more {
 }
 
 .custom-navbar .navbar-collapse {
-  z-index: 999; /* Ajoutez ou ajustez ce z-index */
+  z-index: 999;
+  /* Ajoutez ou ajustez ce z-index */
 }
 
 .custom-navbar .navbar-toggler:active,
@@ -1663,9 +1682,4 @@ textarea {
   border-radius: 50%;
   background: rgba(59, 93, 80, 0.2);
 }
-
-
-
-
-
 </style>

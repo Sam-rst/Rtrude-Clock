@@ -439,19 +439,6 @@
               genus Malus.</p>
           </div>
         </li>
-        <li class="item">
-          <input type="radio"
-            id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."
-            name="basic_carousel"
-            value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." />
-          <label class="label_orange"
-            for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae.">orange</label>
-          <div class="content content_orange"><span class="picto"></span>
-            <h1>orange</h1>
-            <p>The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the
-              family Rutaceae.</p>
-          </div>
-        </li>
       </ul>
     </div>
     <div id="middle-border"></div>
@@ -565,15 +552,17 @@ export default {
     opacity: 0;
   }
 }
-body {
-  background: #eee;
+
+/* { 
+   background: #eee;
   font-family: "Tahoma";
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-body #scene {
+} */
+
+#scene {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -589,7 +578,7 @@ body #scene {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   overflow: hidden;
 }
-body #scene #left-zone {
+#scene #left-zone {
   background: #fff;
   height: 75%;
   flex-grow: 0;
@@ -598,7 +587,7 @@ body #scene #left-zone {
   align-items: center;
   justify-content: left;
 }
-body #scene #left-zone .list {
+#scene #left-zone .list {
   display: flex;
   list-style: none;
   align-content: stretch;
@@ -607,24 +596,24 @@ body #scene #left-zone .list {
   margin: 0;
   padding: 0;
 }
-body #scene #left-zone .list li.item input[type=radio] {
+#scene #left-zone .list li.item input[type=radio] {
   display: none;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label {
+#scene #left-zone .list li.item input[type=radio] ~ label {
   display: block;
   opacity: 0.5;
   height: 50px;
   text-align: center;
   line-height: 50px;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
+#scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
   text-transform: uppercase;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
+#scene #left-zone .list li.item input[type=radio] ~ label:hover {
   opacity: 0.75;
   cursor: pointer;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
+#scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
   content: " ";
   display: block;
   position: absolute;
@@ -637,7 +626,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:
   background-repeat: no-repeat;
 }
 
-body #scene #left-zone .list li.item input[type=radio] ~ label.label_banana:before {
+#scene #left-zone .list li.item input[type=radio] ~ label.label_banana:before {
   content: " ";
   display: block;
   position: absolute;
@@ -649,7 +638,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_banana:befo
   background-size: 75% 75%;
   background-repeat: no-repeat;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label.label_apple:before {
+#scene #left-zone .list li.item input[type=radio] ~ label.label_apple:before {
   content: " ";
   display: block;
   position: absolute;
@@ -661,7 +650,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_apple:befor
   background-size: 75% 75%;
   background-repeat: no-repeat;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label.label_orange:before {
+#scene #left-zone .list li.item input[type=radio] ~ label.label_orange:before {
   content: " ";
   display: block;
   position: absolute;
@@ -673,7 +662,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label.label_orange:befo
   background-size: 75% 75%;
   background-repeat: no-repeat;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content {
+#scene #left-zone .list li.item input[type=radio] ~ .content {
   position: absolute;
   left: 350px;
   top: -400px;
@@ -690,7 +679,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content {
   justify-content: center;
   flex-direction: column;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry .picto {
+#scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry .picto {
   height: 100px;
   width: 100px;
   background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/83067-200.png");
@@ -698,10 +687,10 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_strawb
   background-size: cover;
   background-repeat: no-repeat;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry h1 {
+#scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry h1 {
   color: #D64541;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana .picto {
+#scene #left-zone .list li.item input[type=radio] ~ .content.content_banana .picto {
   height: 100px;
   width: 100px;
   background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png");
@@ -709,10 +698,10 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana
   background-size: cover;
   background-repeat: no-repeat;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana h1 {
+#scene #left-zone .list li.item input[type=radio] ~ .content.content_banana h1 {
   color: #F5D76E;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple .picto {
+#scene #left-zone .list li.item input[type=radio] ~ .content.content_apple .picto {
   height: 100px;
   width: 100px;
   background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png");
@@ -720,10 +709,10 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple 
   background-size: cover;
   background-repeat: no-repeat;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h1 {
+#scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h1 {
   color: #00B16A;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange .picto {
+#scene #left-zone .list li.item input[type=radio] ~ .content.content_orange .picto {
   height: 100px;
   width: 100px;
   background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
@@ -731,38 +720,38 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange
   background-size: cover;
   background-repeat: no-repeat;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
+#scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
   color: #F27935;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
+#scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
   text-transform: uppercase;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content p {
+#scene #left-zone .list li.item input[type=radio] ~ .content p {
   max-width: 50%;
   text-align: center;
 }
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
+#scene #left-zone .list li.item input[type=radio]:checked ~ label {
   opacity: 1;
   -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
           animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_strawberry {
+#scene #left-zone .list li.item input[type=radio]:checked ~ label.label_strawberry {
   color: #D64541;
   border-right: solid 4px #D64541;
 }
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_banana {
+#scene #left-zone .list li.item input[type=radio]:checked ~ label.label_banana {
   color: #F5D76E;
   border-right: solid 4px #F5D76E;
 }
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_apple {
+#scene #left-zone .list li.item input[type=radio]:checked ~ label.label_apple {
   color: #00B16A;
   border-right: solid 4px #00B16A;
 }
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
+#scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
   color: #F27935;
   border-right: solid 4px #F27935;
 }
-body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
+#scene #left-zone .list li.item input[type=radio]:checked ~ .content {
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
   -webkit-animation-name: slidein;
@@ -772,17 +761,24 @@ body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
   -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
           animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-body #scene #middle-border {
+#scene #middle-border {
   background-color: #eee;
   height: 75%;
   flex-grow: 1;
   max-width: 2px;
   z-index: 0;
 }
-body #scene #right-zone {
+#scene #right-zone {
   background: #fff;
   height: 100%;
   flex-grow: 3;
+}
+
+@media only screen and (max-width: 768px) {
+  #scene #left-zone .list li.item input[type=radio]:checked ~ .content h1 {
+    display: none;
+    /* Ajustez l'espacement pour les écrans plus petits si nécessaire */
+  }
 }
 
 </style>
