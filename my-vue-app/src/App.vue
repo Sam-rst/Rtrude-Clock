@@ -63,10 +63,11 @@ body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 header{
   background: linear-gradient(45deg, #102eff, #d2379b);
-  z-index: 20000;
+  /* z-index: 20000; */
 }
 
 nav {
@@ -235,7 +236,7 @@ nav .menu-item:nth-of-type(4):hover~#sub-menu-container #sub-menu-holder {
 .menu-item:hover .sub-menu {
   opacity: 1;
   margin-left: 0;
-  z-index: 11000;
+  /* z-index: 11000; */
 }
 
 .menu-item:hover~#sub-menu-container #sub-menu-holder {
@@ -790,7 +791,7 @@ a.more {
 
 .hero .intro-excerpt {
   position: relative;
-  z-index: 4;
+  /* z-index: 4; */
 }
 
 @media (min-width: 992px) {
@@ -824,7 +825,7 @@ a.more {
   position: relative;
   top: 0px;
   right: 0px;
-  z-index: 2;
+  /* z-index: 2; */
   max-width: 780px;
   left: -20px;
 }
@@ -1004,7 +1005,7 @@ a.more {
   content: "";
   background: #dce5e4;
   height: 0%;
-  z-index: -1;
+  /* z-index: -1; */
   border-radius: 10px;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -1044,7 +1045,7 @@ a.more {
   -webkit-transform: translate(-40%, -40%);
   -ms-transform: translate(-40%, -40%);
   transform: translate(-40%, -40%);
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .why-choose-section .img-wrap img {
@@ -1106,7 +1107,7 @@ a.more {
   -webkit-transform: translate(-40%, -40%);
   -ms-transform: translate(-40%, -40%);
   transform: translate(-40%, -40%);
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .we-help-section .imgs-grid .grid {
@@ -1219,7 +1220,7 @@ a.more {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .testimonial-section {
@@ -1264,7 +1265,7 @@ a.more {
 .testimonial-slider-wrap #testimonial-nav {
   position: absolute;
   top: 50%;
-  z-index: 99;
+  /* z-index: 99; */
   width: 100%;
   display: none;
 }
@@ -1423,7 +1424,7 @@ a.more {
 .footer-section .subscription-form {
   margin-bottom: 40px;
   position: relative;
-  z-index: 2;
+  /* z-index: 2; */
   margin-top: 100px;
 }
 
@@ -1479,7 +1480,7 @@ a.more {
 .footer-section .sofa-img {
   position: absolute;
   top: -200px;
-  z-index: 1;
+  /* z-index: 1; */
   right: 0;
 }
 
