@@ -1,4 +1,5 @@
 const User = require('./database/Entity/User');
+const Card = require('./database/Entity/Card');
 const bodyParser = require('body-parser');
 
 
@@ -42,7 +43,7 @@ const setupRoutes = (app) => {
     try {
       User.insertUser(username, email, password, (insertResult) => {
         if (!insertResult) {
-          console.log("Insert query not worked")
+          console.log("Insert user not worked")
           return res.json({ registerSucess: false });
         } else {
           console.log('User ', username, ' added!');
@@ -54,7 +55,20 @@ const setupRoutes = (app) => {
       return res.status(500).json({ registerSucess: false, error: error.message });
     }
   });
-  
+
+  app.get('/cards', (req, res) => {
+    console.log('Reçu une requête GET : cards');
+    Card.getAllCards((rows) => {
+      if (!rows) {
+        console.log("Query for select all cards not worked")
+        res.status(500).send(err.message);
+      } else {
+        console.log("All the cards")
+        res.json(rows)
+      }
+    })
+  })
+
 };
 
 
