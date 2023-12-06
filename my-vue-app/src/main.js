@@ -10,6 +10,9 @@ import MyHome from './components/MyHome.vue'
 // Importe Login component
 import MyLogin from './components/MyLogin.vue'
 
+// Importe Register component
+import MyRegister from './components/MyRegister.vue'
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -21,6 +24,7 @@ const router = createRouter({
     routes: [
       { path: "/", component: MyHome },
       { path: "/login", component: MyLogin },
+      { path: "/register", component: MyRegister},
     ],
 });
 

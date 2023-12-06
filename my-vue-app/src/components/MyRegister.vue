@@ -50,60 +50,78 @@
 
 
 <script>
-
 export default {
-  name: 'Register',
- 
-}
-values = {
-    username: '',
-    email: '',
-    password1: '',
-    password2: ''
-}
+    name: 'MyRegister',
+    mounted() {
+        const values = {
+            username: '',
+            email: '',
+            password1: '',
+            password2: ''
+        };
 
-document.getElementById('username').addEventListener('change', function (e) {
-    values.username = this.value
-})
+        const events = [
+            { id: 'username', type: 'change', handler: handleUsernameChange },
+            { id: 'email', type: 'change', handler: handleEmailChange },
+            { id: 'password', type: 'change', handler: handlePasswordChange },
+            { id: 'confirmPassword', type: 'change', handler: handleConfirmPasswordChange },
+            { id: 'submit', type: 'submit', handler: handleSubmit }
+        ];
 
-document.getElementById('email').addEventListener('change', function (e) {
-    values.email = this.value
-})
-
-document.getElementById('password').addEventListener('change', function (e) {
-    values.password1 = this.value
-
-    confirmPasswords()
-})
-
-document.getElementById('confirmPassword').addEventListener('change', function (e) {
-    values.password2 = this.value
-
-    confirmPasswords()
-})
-
-function confirmPasswords() {
-    var passwordError = document.getElementById("messageError");
-
-    if ((values.password1 == "") || (values.password2 == "")) {
-        return false
-    } else {
-        if (values.password1 !== values.password2) {
-            passwordError.innerHTML = "Les mots de passe ne correspondent pas. Réessayez.";
-            return false
-        } else {
-            passwordError.innerHTML = ""; // Effacer le message d'erreur s'il y en avait un précédemment
-            return true
+        function handleUsernameChange(e) {
+            values.username = e.target.value;
         }
+
+        function handleEmailChange(e) {
+            values.email = e.target.value;
+        }
+
+        function handlePasswordChange(e) {
+            values.password1 = e.target.value;
+            confirmPasswords();
+        }
+
+        function handleConfirmPasswordChange(e) {
+            values.password2 = e.target.value;
+            confirmPasswords();
+        }
+
+        function confirmPasswords() {
+            var passwordError = document.getElementById("messageError");
+
+            if (values.password1 === "" || values.password2 === "") {
+                return false;
+            } else {
+                if (values.password1 !== values.password2) {
+                    passwordError.innerHTML = "Les mots de passe ne correspondent pas. Réessayez.";
+                    return false;
+                } else {
+                    passwordError.innerHTML = "";
+                    return true;
+                }
+            }
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            console.log(values);
+            window.alert("ATTENTIIIIOOOON");
+        }
+
+        // Attach event listeners
+        events.forEach(event => {
+            document.getElementById(event.id).addEventListener(event.type, event.handler);
+        });
     }
 }
-
-
-document.getElementById('submit').addEventListener('submit', function (e) {
-    e.preventDefault()
-    console.log(values)
-    window.alert("ATTENTIIIIOOOON")
-
-})
-
 </script>
+
+<style>
+main {
+    margin-top: 175px;
+}
+.messageError {
+    color: red
+}
+</style>
+
