@@ -5,8 +5,15 @@
     </header>
 
     <main>
-      <MyHome />
+      <router-link to="/">
+      </router-link>
+
+      <router-link to="/login">
+      </router-link>
+
+      <router-view />
     </main>
+
     <footer class="footer-section">
       <MyFooter />
     </footer>
@@ -17,7 +24,6 @@
 <script>
 
 import NavBar from "./components/NavBar.vue";
-import MyHome from "./components/MyHome.vue";
 import MyFooter from "./components/MyFooter.vue";
 import MyLogin2 from "./components/MyLogin.vue";
 
@@ -25,7 +31,6 @@ export default {
   name: "App",
   components: {
     NavBar,
-    MyHome,
     MyFooter,
     MyLogin2,
     

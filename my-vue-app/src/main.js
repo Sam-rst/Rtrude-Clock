@@ -3,8 +3,12 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 // Importer la page App (home)
 import App from './App.vue';
-// Importez la page Connexion (PageLogin) 
-import LoginPage from './Connexion.vue';
+
+// Importe home component
+import MyHome from './components/MyHome.vue'
+
+// Importe Login component
+import MyLogin from './components/MyLogin.vue'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
@@ -15,8 +19,8 @@ import './assets/scss/style.scss';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
-      { path: "/", component: App },
-      { path: "/login", component: LoginPage },
+      { path: "/", component: MyHome },
+      { path: "/login", component: MyLogin },
     ],
 });
 
