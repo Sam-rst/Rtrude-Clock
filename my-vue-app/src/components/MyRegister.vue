@@ -52,6 +52,7 @@
 <script>
 export default {
     name: 'MyRegister',
+
     mounted() {
         const values = {
             username: '',
@@ -117,9 +118,7 @@ export default {
 </script>
 
 <style>
-main {
-    margin-top: 175px;
-}
+
 .messageError {
     color: red
 }
