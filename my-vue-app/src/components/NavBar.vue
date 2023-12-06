@@ -796,7 +796,7 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
   }
 
   main {
-    margin-top: 0;
+    margin-top: 30px;
   }
 
   nav .menu-item {

@@ -6,7 +6,6 @@
 
     <main>
       <MyHome />
-      <MyLiaison />
     </main>
     <footer class="footer-section">
       <MyFooter />
