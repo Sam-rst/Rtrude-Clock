@@ -398,44 +398,47 @@
   <div id="scene">
     <div id="left-zone">
       <ul class="list">
+
         <li class="item">
           <input type="radio"
-            id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"
+            id="radio_The garden Samuel (or simply Samuel /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"
             name="basic_carousel"
-            value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"
+            value="The garden Samuel (or simply Samuel /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"
             checked="checked" />
-          <label class="label_strawberry"
-            for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">strawberry</label>
-          <div class="content content_strawberry"><span class="picto"></span>
-            <h1>strawberry</h1>
-            <p>The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid
+          <label class="label_Samuel"
+            for="radio_The garden Samuel (or simply Samuel /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)">Samuel</label>
+          <div class="content content_Samuel"><span class="picto"></span>
+            <h1>Samuel</h1>
+            <p>The garden Samuel (or simply Samuel /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid
               species of the genus Fragaria (collectively known as the strawberries)</p>
           </div>
         </li>
+
         <li class="item">
           <input type="radio"
-            id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."
+            id="radio_A Bastien is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."
             name="basic_carousel"
-            value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." />
-          <label class="label_banana"
-            for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">banana</label>
-          <div class="content content_banana"><span class="picto"></span>
-            <h1>banana</h1>
-            <p>A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering
+            value="A Bastien is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." />
+          <label class="label_Bastien"
+            for="radio_A Bastien is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa.">Bastien</label>
+          <div class="content content_Bastien"><span class="picto"></span>
+            <h1>Bastien</h1>
+            <p>A Bastien is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering
               plants in the genus Musa.</p>
           </div>
         </li>
+        
         <li class="item">
           <input type="radio"
-            id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."
+            id="radio_The Paul tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the Paul. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."
             name="basic_carousel"
-            value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." />
-          <label class="label_apple"
-            for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">apple</label>
-          <div class="content content_apple"><span class="picto"></span>
-            <h1>apple</h1>
-            <p>The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous
-              fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the
+            value="The Paul tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the Paul. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." />
+          <label class="label_Paul"
+            for="radio_The Paul tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the Paul. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus.">Paul</label>
+          <div class="content content_Paul"><span class="picto"></span>
+            <h1>Paul</h1>
+            <p>The Paul tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous
+              fruit, the Paul. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the
               genus Malus.</p>
           </div>
         </li>
@@ -492,14 +495,15 @@
               <div class="meta">
                 <span>by <a href="#">Kristin Watson</a></span> <span>on <a href="#">Dec 12, 2021</a></span>
               </div>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-</div>
-<!-- End Blog Section --></template>
+  <!-- End Blog Section -->
+</template>
 
 <script>
 
@@ -517,36 +521,43 @@ export default {
     top: -400px;
     opacity: 0;
   }
+
   100% {
     opacity: 1;
     top: 0px;
   }
 }
+
 @keyframes slidein {
   0% {
     top: -400px;
     opacity: 0;
   }
+
   100% {
     opacity: 1;
     top: 0px;
   }
 }
+
 @-webkit-keyframes slideout {
   0% {
     top: 0;
     opacity: 1;
   }
+
   100% {
     top: -400px;
     opacity: 0;
   }
 }
+
 @keyframes slideout {
   0% {
     top: 0;
     opacity: 1;
   }
+
   100% {
     top: -400px;
     opacity: 0;
@@ -578,6 +589,7 @@ export default {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   overflow: hidden;
 }
+
 #scene #left-zone {
   background: #fff;
   height: 75%;
@@ -587,6 +599,7 @@ export default {
   align-items: center;
   justify-content: left;
 }
+
 #scene #left-zone .list {
   display: flex;
   list-style: none;
@@ -595,172 +608,184 @@ export default {
   flex-grow: 1;
   margin: 0;
   padding: 0;
+
 }
+
 #scene #left-zone .list li.item input[type=radio] {
   display: none;
 }
-#scene #left-zone .list li.item input[type=radio] ~ label {
+
+#scene #left-zone .list li.item input[type=radio]~label {
   display: block;
   opacity: 0.5;
   height: 50px;
   text-align: center;
   line-height: 50px;
+  margin-bottom: 20px;
 }
-#scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
+
+#scene #left-zone .list li.item input[type=radio]~label:first-letter {
   text-transform: uppercase;
 }
-#scene #left-zone .list li.item input[type=radio] ~ label:hover {
+
+#scene #left-zone .list li.item input[type=radio]~label:hover {
   opacity: 0.75;
   cursor: pointer;
 }
-#scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/83067-200.png");
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
 
-#scene #left-zone .list li.item input[type=radio] ~ label.label_banana:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png");
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-#scene #left-zone .list li.item input[type=radio] ~ label.label_apple:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png");
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-#scene #left-zone .list li.item input[type=radio] ~ label.label_orange:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-#scene #left-zone .list li.item input[type=radio] ~ .content {
+#scene #left-zone .list li.item input[type=radio]~.content {
   position: absolute;
   left: 350px;
   top: -400px;
   width: 650px;
   height: 400px;
   -webkit-animation-duration: 0.75s;
-          animation-duration: 0.75s;
+  animation-duration: 0.75s;
   -webkit-animation-name: slideout;
-          animation-name: slideout;
+  animation-name: slideout;
   -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry .picto {
+
+
+/* Samuel la fraise */
+#scene #left-zone .list li.item input[type=radio]~label.label_Samuel:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("../assets/images/person_1.jpg");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat; 
+
+}
+
+#scene #left-zone .list li.item input[type=radio]~.content.content_Samuel .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/83067-200.png");
+  background-image: url("../assets/images/person_1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 50%;
 }
-#scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry h1 {
+
+#scene #left-zone .list li.item input[type=radio]~.content.content_Samuel h1 {
   color: #D64541;
 }
-#scene #left-zone .list li.item input[type=radio] ~ .content.content_banana .picto {
+
+
+/* Bastien la banane */
+#scene #left-zone .list li.item input[type=radio]~label.label_Bastien:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("../assets/images/person_3.jpg");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+
+#scene #left-zone .list li.item input[type=radio]~.content.content_Bastien .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png");
+  background-image: url("../assets/images/person_3.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 50%;
 }
-#scene #left-zone .list li.item input[type=radio] ~ .content.content_banana h1 {
+
+#scene #left-zone .list li.item input[type=radio]~.content.content_Bastien h1 {
   color: #F5D76E;
 }
-#scene #left-zone .list li.item input[type=radio] ~ .content.content_apple .picto {
+
+
+
+
+/* Paul la pomme */
+#scene #left-zone .list li.item input[type=radio]~label.label_Paul:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("../assets/images/person_2.jpg");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+
+#scene #left-zone .list li.item input[type=radio]~.content.content_Paul .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png");
+  background-image: url("../assets/images/person_2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 50%; 
 }
-#scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h1 {
+
+#scene #left-zone .list li.item input[type=radio]~.content.content_Paul h1 {
   color: #00B16A;
 }
-#scene #left-zone .list li.item input[type=radio] ~ .content.content_orange .picto {
-  height: 100px;
-  width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/9636-200.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
-  color: #F27935;
-}
-#scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
+
+
+
+
+
+#scene #left-zone .list li.item input[type=radio]~.content h1:first-letter {
   text-transform: uppercase;
 }
-#scene #left-zone .list li.item input[type=radio] ~ .content p {
+
+#scene #left-zone .list li.item input[type=radio]~.content p {
   max-width: 50%;
   text-align: center;
 }
-#scene #left-zone .list li.item input[type=radio]:checked ~ label {
+
+#scene #left-zone .list li.item input[type=radio]:checked~label {
   opacity: 1;
   -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
-#scene #left-zone .list li.item input[type=radio]:checked ~ label.label_strawberry {
+
+#scene #left-zone .list li.item input[type=radio]:checked~label.label_Samuel {
   color: #D64541;
   border-right: solid 4px #D64541;
 }
-#scene #left-zone .list li.item input[type=radio]:checked ~ label.label_banana {
+
+#scene #left-zone .list li.item input[type=radio]:checked~label.label_Bastien {
   color: #F5D76E;
   border-right: solid 4px #F5D76E;
 }
-#scene #left-zone .list li.item input[type=radio]:checked ~ label.label_apple {
+
+#scene #left-zone .list li.item input[type=radio]:checked~label.label_Paul {
   color: #00B16A;
   border-right: solid 4px #00B16A;
 }
-#scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
-  color: #F27935;
-  border-right: solid 4px #F27935;
-}
-#scene #left-zone .list li.item input[type=radio]:checked ~ .content {
+
+#scene #left-zone .list li.item input[type=radio]:checked~.content {
   -webkit-animation-duration: 0.75s;
-          animation-duration: 0.75s;
+  animation-duration: 0.75s;
   -webkit-animation-name: slidein;
-          animation-name: slidein;
+  animation-name: slidein;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
+
 #scene #middle-border {
   background-color: #eee;
   height: 75%;
@@ -768,17 +793,16 @@ export default {
   max-width: 2px;
   z-index: 0;
 }
+
 #scene #right-zone {
   background: #fff;
   height: 100%;
   flex-grow: 3;
 }
 
-@media only screen and (max-width: 768px) {
-  #scene #left-zone .list li.item input[type=radio]:checked ~ .content h1 {
-    display: none;
-    /* Ajustez l'espacement pour les écrans plus petits si nécessaire */
+@media only screen and (max-width: 1000px) {
+  #scene {
+  display: none;
   }
-}
-
-</style>
+  
+}</style>
