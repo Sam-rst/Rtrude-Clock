@@ -11,8 +11,11 @@ Projet réalisé par :
 
 ## INFORMATIONS
 
-- my-vue-app is the FRONTEND
-- my-express-app is the BACKEND
+### Différentes pages :
+- / : page principale (home)
+- /register : pour pouvoir s'inscrire au site (register)
+- /login : pour pouvoir se connecter à son compte utilisateur (login)
+- /shop : connaitre tous les produits des chaises (cards)
 
 ## Installation
 
