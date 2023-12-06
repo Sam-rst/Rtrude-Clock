@@ -58,5 +58,10 @@ export default {
 html.fontawesome-i2svg-active.fontawesome-i2svg-complete body div#app div footer.footer-section div.container.relative div.sofa-img {
     display: none;
 }
+
+main {
+    margin-top: 175px;
+}
+
 </style>
   

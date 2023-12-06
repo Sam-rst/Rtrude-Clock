@@ -11,6 +11,9 @@
       <router-link to="/login">
       </router-link>
 
+      <router-link to="/register">
+      </router-link>
+
       <router-view />
     </main>
 
@@ -26,11 +29,14 @@
 import NavBar from "./components/NavBar.vue";
 import MyFooter from "./components/MyFooter.vue";
 
+
 export default {
   name: "App",
   components: {
     NavBar,
     MyFooter,
+    
+    
   },
 
 };
