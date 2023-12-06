@@ -17,3 +17,7 @@ User.getUserByUsername('Samort', (res) => {
     }
 });
 
+User.getAllUsers((res) => {
+    console.log(res)
+})
+

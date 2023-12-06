@@ -5,7 +5,7 @@
         <p v-if="passwordMatch == null"></p>
         <p class="success" v-if="passwordMatch">Connection established</p>
         <p class="error" v-else>Connection impossible</p>
-        <form @submit.prevent="login">
+        <form @submit.prevent="login" method="POST">
             <label for="username">Username:</label>
             <input type="text" id="username" v-model="username">
             <br>
@@ -31,8 +31,8 @@ export default {
     methods: {
         async login() {
             try {
-                console.log('Username : ', this.username)
-                console.log('Password : ', this.password)
+                // console.log('Username : ', this.username)
+                // console.log('Password : ', this.password)
                 const response = await axios.post('http://localhost:3000/login', {
                     username: this.username,
                     password: this.password,
