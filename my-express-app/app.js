@@ -1,18 +1,24 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-
-const initializeDatabase = require('./myDB');
 const setupRoutes = require('./routes');
 
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
 app.use(cors({
-  origin: 'http://localhost:8080' // Permet l’accès uniquement de mon localhost
+  origin: 'http://localhost:8080/login' // Permet l’accès uniquement de mon localhost
 }));
 //Ou alors utiliser pour avoir accès de n'importe où
-//app.use(cors())
+// app.use(cors())
 
-const db = initializeDatabase();
-setupRoutes(app, db);
+// ROUTES
+setupRoutes(app);
+
+
+
 
 const items = [
   { id: 1, name: 'Item 1' },
@@ -20,10 +26,4 @@ const items = [
 ];
 app.get('/home', (req, res) => {
   res.json(items);
-});
-
-// ROUTES
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
 });
