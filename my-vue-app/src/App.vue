@@ -65,6 +65,14 @@ export default {
   --item-width: calc(var(--menu-width) / var(--items));
 }
 
+main {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 1000px) {
+  main {
+    margin-top: 30px;
+  }
+}
 
 a {
   text-decoration: none;
