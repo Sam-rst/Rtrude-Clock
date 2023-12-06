@@ -1,214 +1,205 @@
 <template>
-    <nav id="menu">
+  <nav id="menu">
 
 
 
 
-        <div class="menu-item">
-            <div class="menu-text">
-                <a href="#">Produit</a>
-            </div>
-            <div class="sub-menu">
+    <div class="menu-item">
+      <div class="menu-text">
+        <a href="/">Accueil</a>
+      </div>
+      <div class="sub-menu">
 
-                <div class="icon-box">
-                    <div class="icon"><i class="fal fa-wind-turbine"></i></div>
-                    <div class="text">
-                        <div class="title">Turbo Editor <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">Edit your code while slowing down time.</div>
-                    </div>
-                </div>
-
-
-
-                <div class="icon-box">
-                    <div class="icon"><i class="fal fa-lightbulb-on"></i></div>
-                    <div class="text">
-                        <div class="title">Idea Creator <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">Think of an idea, and have an AI create it.</div>
-                    </div>
-                </div>
-                <div class="icon-box">
-                    <div class="icon"><i class="fal fa-bomb"></i></div>
-                    <div class="text">
-                        <div class="title">Super Collider <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">Remove mass from any object.</div>
-                    </div>
-                </div>
-                <div class="sub-menu-holder"></div>
-            </div>
+        <div class="icon-box">
+          <div class="icon"><i class="fal fa-home"></i></div>
+          <div class="text">
+            <div class="title"><a href="/">MyHome</a> <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">Bienvenue sur la page d'accueil.</div>
+          </div>
         </div>
 
-
-
-
-
-        <div class="menu-item highlight">
-            <div class="menu-text">
-                <a href="#">Services</a>
-            </div>
-            <div class="sub-menu double">
-                <div class="icon-box gb a">
-                    <div class="icon"><i class="far fa-question-circle"></i></div>
-                    <div class="text">
-                        <div class="title">Consult <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">From Professionals</div>
-                    </div>
-                </div>
-                <div class="icon-box gb b">
-                    <div class="icon"><i class="far fa-users-class"></i></div>
-                    <div class="text">
-                        <div class="title">Teach <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">In Classroom</div>
-                    </div>
-                </div>
-                <div class="icon-box gb c">
-                    <div class="icon"><i class="far fa-school"></i></div>
-                    <div class="text">
-                        <div class="title">Learn <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">By Video</div>
-                    </div>
-                </div>
-                <div class="icon-box gb d">
-                    <div class="icon"><i class="far fa-chess-rook"></i></div>
-                    <div class="text">
-                        <div class="title">Keep <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">The Castle</div>
-                    </div>
-                </div>
-                <div class="icon-box gb e">
-                    <div class="icon"><i class="far fa-video-plus"></i></div>
-                    <div class="text" onclick="#">
-                        <div class="title">Become <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">A Creator</div>
-                    </div>
-                </div>
-                <div class="icon-box gb f">
-                    <div class="icon"><i class="far fa-cat"></i></div>
-                    <div class="text">
-                        <div class="title">Understand <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">Our Journey</div>
-                    </div>
-                </div>
-                <div class="bottom-container">
-                    Ready to dive in? <a href="#">Get Started</a>
-                </div>
-                <div class="sub-menu-holder"></div>
-            </div>
+        <div class="icon-box">
+          <div class="icon"><i class="fal fa-store"></i></div>
+          <div class="text">
+            <div class="title"><a href="/shop">Shop</a> <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">Explorez l'ensemble du catalogue.</div>
+          </div>
         </div>
 
+        <div class="sub-menu-holder"></div>
+      </div>
+    </div>
 
 
 
-        <div class="menu-item highlight">
-            <div class="menu-text">
-                <a href="#">Support</a>
-            </div>
-            <div class="sub-menu triple">
-                <div class="top-container gb c icon-box">
-                    <div class="icon big"><i class="far fa-book"></i></div>
-                    <div class="text">
-                        <div class="title">Where to start</div>
-                        <div class="sub-text">Find out where to begin below</div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h3>Your Journey</h3>
-                    <a href="#">Get Started</a>
-                    <a href="#">Learn the Basics</a>
-                    <a href="#">Get Advanced</a>
-                    <a href="#">Start Teaching</a>
-                </div>
-                <div class="box">
-                    <h3>Your Tools</h3>
-                    <a href="#">Turbo Editor</a>
-                    <a href="#">Time Stopper</a>
-                    <a href="#">Brain Enhancer</a>
-                    <a href="#">Network Maker</a>
-                </div>
-                <div class="icon-box flat">
-                    <div class="icon"><i class="fal fa-plug"></i></div>
-                    <div class="text">
-                        <div class="title">API Guide <i class="far fa-arrow-right"></i></div>
-                    </div>
-                </div>
-                <div class="icon-box flat">
-                    <div class="icon"><i class="fal fa-comments"></i></div>
-                    <div class="text">
-                        <div class="title">Support Line <i class="far fa-arrow-right"></i></div>
-                    </div>
-                </div>
-                <div class="icon-box flat">
-                    <div class="icon"><i class="fal fa-phone-volume"></i></div>
-                    <div class="text">
-                        <div class="title">Live Chat <i class="far fa-arrow-right"></i></div>
-                    </div>
-                </div>
-                <div class="icon-box flat">
-                    <div class="icon"><i class="fal fa-book-spells"></i></div>
-                    <div class="text">
-                        <div class="title">Documentation <i class="far fa-arrow-right"></i></div>
-                    </div>
-                </div>
-            </div>
+
+
+    <div class="menu-item highlight">
+      <div class="menu-text">
+        <a href="#">Panier</a>
+      </div>
+      <div class="sub-menu double">
+        <div class="icon-box gb a">
+          <div class="icon"><i class="far fa-question-circle"></i></div>
+          <div class="text">
+            <div class="title">Consult <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">From Professionals</div>
+          </div>
+        </div>
+        <div class="icon-box gb b">
+          <div class="icon"><i class="far fa-users-class"></i></div>
+          <div class="text">
+            <div class="title">Teach <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">In Classroom</div>
+          </div>
+        </div>
+        <div class="icon-box gb c">
+          <div class="icon"><i class="far fa-school"></i></div>
+          <div class="text">
+            <div class="title">Learn <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">By Video</div>
+          </div>
+        </div>
+        <div class="icon-box gb d">
+          <div class="icon"><i class="far fa-chess-rook"></i></div>
+          <div class="text">
+            <div class="title">Keep <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">The Castle</div>
+          </div>
+        </div>
+        <div class="icon-box gb e">
+          <div class="icon"><i class="far fa-video-plus"></i></div>
+          <div class="text" onclick="#">
+            <div class="title">Become <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">A Creator</div>
+          </div>
+        </div>
+        <div class="icon-box gb f">
+          <div class="icon"><i class="far fa-cat"></i></div>
+          <div class="text">
+            <div class="title">Understand <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">Our Journey</div>
+          </div>
+        </div>
+        <div class="bottom-container">
+          Ready to dive in? <a href="#">Get Started</a>
+        </div>
+        <div class="sub-menu-holder"></div>
+      </div>
+    </div>
+
+
+
+
+    <div class="menu-item highlight">
+      <div class="menu-text">
+        <a href="#">Support</a>
+      </div>
+      <div class="sub-menu triple">
+        <div class="top-container gb c icon-box">
+          <div class="icon big"><i class="far fa-book"></i></div>
+          <div class="text">
+            <div class="title">Noous Consernant</div>
+            <div class="sub-text">Find out where to begin below</div>
+          </div>
+        </div>
+        <div class="box">
+          <h3>Your Journey</h3>
+          <a href="#">Get Started</a>
+          <a href="#">Learn the Basics</a>
+          <a href="#">Get Advanced</a>
+          <a href="#">Start Teaching</a>
+        </div>
+        <div class="box">
+          <h3>Your Tools</h3>
+          <a href="#">Turbo Editor</a>
+          <a href="#">Time Stopper</a>
+          <a href="#">Brain Enhancer</a>
+          <a href="#">Network Maker</a>
+        </div>
+        <div class="icon-box flat">
+          <div class="icon"><i class="fal fa-plug"></i></div>
+          <div class="text">
+            <div class="title">API Guide <i class="far fa-arrow-right"></i></div>
+          </div>
+        </div>
+        <div class="icon-box flat">
+          <div class="icon"><i class="fal fa-comments"></i></div>
+          <div class="text">
+            <div class="title">Support Line <i class="far fa-arrow-right"></i></div>
+          </div>
+        </div>
+        <div class="icon-box flat">
+          <div class="icon"><i class="fal fa-phone-volume"></i></div>
+          <div class="text">
+            <div class="title">Live Chat <i class="far fa-arrow-right"></i></div>
+          </div>
+        </div>
+        <div class="icon-box flat">
+          <div class="icon"><i class="fal fa-book-spells"></i></div>
+          <div class="text">
+            <div class="title">Documentation <i class="far fa-arrow-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="menu-item">
+      <div class="menu-text">
+        <a href="/register">Connexion</a>
+      </div>
+
+      <div class="sub-menu">
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-user"></i></div>
+          <div class="text">
+            <div class="title"><a href="/login">Login</a> <i class="fas fa-sign-in-alt"></i></div>
+            <div class="sub-text">Connectez-vous à votre compte.</div>
+          </div>
         </div>
 
-
-
-        <div class="menu-item">
-            <div class="menu-text">
-                <a href="#">Community</a>
-            </div>
-            <div class="sub-menu">
-                <div class="icon-box">
-                    <div class="icon"><i class="far fa-satellite"></i></div>
-                    <div class="text">
-                        <div class="title">Forum <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">Join our passionate community.</div>
-                    </div>
-                </div>
-                <div class="icon-box">
-                    <div class="icon"><i class="fab fa-twitter-square"></i></div>
-                    <div class="text">
-                        <div class="title">Twitter <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">Follow us on twitter.</div>
-                    </div>
-                </div>
-                <div class="icon-box">
-                    <div class="icon"><i class="fab fa-twitch"></i></div>
-                    <div class="text">
-                        <div class="title">Live Stream <i class="far fa-arrow-right"></i></div>
-                        <div class="sub-text">We stream content every day.</div>
-                    </div>
-                </div>
-                <div class="sub-menu-holder"></div>
-            </div>
+        <div class="icon-box">
+          <div class="icon"><i class="fas fa-user-plus"></i></div>
+          <div class="text">
+            <div class="title"><a href="/register">Register</a> <i class="fas fa-arrow-right"></i></div>
+            <div class="sub-text">Créez votre compte.</div>
+          </div>
         </div>
-        <div id="sub-menu-container">
-            <div id="sub-menu-holder">
-                <div id="sub-menu-bottom">
+        <div class="sub-menu-holder"></div>
+      </div>
+    </div>
 
-                </div>
-            </div>
+
+
+    <div id="sub-menu-container">
+      <div id="sub-menu-holder">
+        <div id="sub-menu-bottom">
+
         </div>
-    </nav>
+      </div>
+    </div>
+
+
+  </nav>
 </template>
 
 <script>
 export default {
-    name: "NavBar",
-    mounted() {
-        // Ajoutez le script Font Awesome au moment du montage du composant
-        const script = document.createElement("script");
-        script.src = "https://kit.fontawesome.com/628c8d2499.js";
-        script.crossOrigin = "anonymous";
-        document.head.appendChild(script);
-    },
+  name: "NavBar",
+  mounted() {
+    // Ajoutez le script Font Awesome au moment du montage du composant
+    const script = document.createElement("script");
+    script.src = "https://kit.fontawesome.com/628c8d2499.js";
+    script.crossOrigin = "anonymous";
+    document.head.appendChild(script);
+  },
 };
 </script>
 
 
 <style>
-
 header {
   background: linear-gradient(45deg, #6ba991, #1a2924);
   top: 0;
@@ -222,7 +213,6 @@ main {
   margin-top: 0px;
 }
 
-
 nav {
   width: var(--menu-width);
   display: flex;
@@ -235,7 +225,6 @@ nav {
   flex-wrap: wrap;
 
 }
-
 
 
 nav .menu-item {
@@ -262,6 +251,10 @@ nav .menu-text a {
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   transition: color 0.1s ease-out;
   text-align: center;
+}
+
+nav .menu-text a {
+    text-decoration: none; 
 }
 
 nav .menu-text a:hover {
@@ -306,7 +299,7 @@ nav .menu-item:hover~#sub-menu-container #sub-menu-holder {
 nav .menu-item:nth-of-type(1):hover~#sub-menu-container #sub-menu-holder,
 nav .menu-item:nth-of-type(4):hover~#sub-menu-container #sub-menu-holder {
   clip-path: inset(0 28.75em 0 0 round 10px);
-  height: 14em;
+  height: 10em;
 }
 
 nav .menu-item:nth-of-type(2):hover~#sub-menu-container #sub-menu-holder,
@@ -346,6 +339,7 @@ nav .menu-item:nth-of-type(4):hover~#sub-menu-container #sub-menu-holder {
   opacity: 0;
   font-weight: initial;
   padding: 1.5em;
+  
   transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
 }
 
@@ -410,6 +404,9 @@ nav .menu-item:nth-of-type(4):hover~#sub-menu-container #sub-menu-holder {
 }
 
 /* Menu specific */
+
+
+
 .menu-item .title {
   font-weight: 500;
   color: rgb(44 70 86);
@@ -784,6 +781,7 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
   height: 10px;
   float: left
 }
+
 /* fin css tiny-slider */
 
 
@@ -791,33 +789,36 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
 @media only screen and (max-width: 1000px) {
 
   nav {
-    width: 100%; 
-    margin: 0; 
+    width: 100%;
+    margin: 0;
   }
 
   nav .menu-item {
     text-align: center;
-    min-height: 0em; 
+    min-height: 0em;
     flex-grow: 0;
     padding: 0.5em 0em;
   }
 
-  nav .menu-text, nav .menu-text a {
+  nav .menu-text,
+  nav .menu-text a {
     font-size: small;
   }
 
-  html.fontawesome-i2svg-active.fontawesome-i2svg-complete body div#app div header nav#menu div.menu-item div.sub-menu{
+  html.fontawesome-i2svg-active.fontawesome-i2svg-complete body div#app div header nav#menu div.menu-item div.sub-menu {
     display: none;
   }
-  html.fontawesome-i2svg-active.fontawesome-i2svg-complete body div#app div header nav#menu div#sub-menu-container{
+
+  html.fontawesome-i2svg-active.fontawesome-i2svg-complete body div#app div header nav#menu div#sub-menu-container {
     display: none;
   }
-}
-@media only screen and (max-width: 600px) {
-    header {
-        position: static;
-    }
 }
 
+
+@media only screen and (max-width: 600px) {
+  header {
+    position: static;
+  }
+}
 </style>
 

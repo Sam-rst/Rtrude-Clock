@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-5">
+  <div class="container mt-5 margpetithaut">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="card">
@@ -26,7 +26,8 @@
 
               <div class="mb-3">
                 <label for="password1" class="form-label">Mot de passe</label>
-                <input type="password" class="form-control" id="password1" placeholder="Votre mot de passe" name="password" v-model="password1" required />
+                <input type="password" class="form-control" id="password1" placeholder="Votre mot de passe"
+                  name="password" v-model="password1" required />
               </div>
 
               <div id="messagemdp">
@@ -39,13 +40,17 @@
 
               <div class="mb-3">
                 <label for="password2" class="form-label">Vérification mot de passe </label>
-                <input type="password" class="form-control" id="password2" v-model="password2" @input="validateForm" placeholder="Confirmer mot de passe" required />
+                <input type="password" class="form-control" id="password2" v-model="password2" @input="validateForm"
+                  placeholder="Confirmer mot de passe" required />
                 <small id="passwordHelp" class="form-text text-muted">Entrez le même mot de passe</small>
               </div>
 
               <div class="messageError" id="messageError" v-if="passwordErrorMessage">{{ passwordErrorMessage }}</div>
               <div class="d-grid">
                 <button type="submit" id="submit" class="btn btn-primary">S'inscrire !</button>
+              </div>
+              <div class="text-center mt-3">
+                <router-link to="/login">Déjà membre? Connecter vous à votre compte</router-link>
               </div>
             </form>
           </div>
@@ -127,7 +132,6 @@ export default {
 </script>
 
 <style>
-
 .messageError {
   color: red;
 }
@@ -150,5 +154,9 @@ export default {
   position: relative;
   left: -7px;
   content: "✓ ";
+}
+
+.margpetithaut {
+  padding: 100px;
 }
 </style>
