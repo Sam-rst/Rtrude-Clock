@@ -1,19 +1,25 @@
 <template>
-    <div class="hero">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-5">
-                    <div class="intro-excerpt">
-                        <h1>Shop</h1>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-
-                </div>
-            </div>
+  <!-- Start Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5">
+          <div class="intro-excerpt">
+            <h1>Modern Interior <span clsas="d-block">Design Studio</span></h1>
+          </div>
+          <p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit
+              imperdiet dolor tempor tristique.</p>
         </div>
+        <div class="col-lg-7">
+          <div class="hero-img-wrap" style="size: 50%;">
+            <img src="..\assets\shop-removebg-preview.png">
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End Hero Section -->
+  </div>
+  <!-- End Hero Section -->
+
 
 
 
