@@ -17,3 +17,11 @@ app.use(cors({
 
 // ROUTES
 setupRoutes(app);
+
+const items = [
+  { id: 1, name: 'Item 1' },
+  { id: 2, name: 'Item 2' },
+];
+app.get('/home', (req, res) => {
+  res.json(items);
+});

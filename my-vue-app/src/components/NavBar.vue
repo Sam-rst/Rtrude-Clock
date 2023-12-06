@@ -219,7 +219,7 @@ header {
 }
 
 main {
-  margin-top: 0px;
+  margin-top: 100px;
 }
 
 
@@ -793,6 +793,10 @@ nav .menu-item.highlight:hover~#sub-menu-container #sub-menu-holder #sub-menu-bo
   nav {
     width: 100%; 
     margin: 0; 
+  }
+
+  main {
+    margin-top: 30px;
   }
 
   nav .menu-item {
