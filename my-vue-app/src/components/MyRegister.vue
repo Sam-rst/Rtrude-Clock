@@ -1,6 +1,3 @@
-
-
-
 <template>
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -10,34 +7,41 @@
                         <h2 class="text-center">Inscription</h2>
                     </div>
                     <div class="card-body">
-                        <form id="registrationForm" onsubmit="return validateForm()" method="post">
+                        <form id="registrationForm" @submit.prevent="validateForm">
                             <div class="mb-3">
                                 <label for="username" class="form-label">Pseudonyme</label>
-                                <input type="text" class="form-control" name="username" id="username" required>
+                                <input type="text" class="form-control" v-model="values.username" required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="email" class="form-label">Adresse mail</label>
-                                <input type="email" class="form-control" name="email" id="email" required>
+                                <input type="email" class="form-control" v-model="values.email" required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="password" class="form-label">Mot de passe</label>
-                                <input type="password" class="form-control" id="password" placeholder="Votre mot de passe"
-                                    name="password" required>
+                                <input type="password" class="form-control" v-model="values.password1"
+                                    placeholder="Votre mot de passe" required>
+                            </div>
+
+                            <div id="messagemdp">
+                                <h9>Le mot de passe doit contenir les éléments suivants</h9>
+                                <p :class="{ 'valid': isLowerCase, 'invalid': !isLowerCase }">Une lettre minuscule</p>
+                                <p :class="{ 'valid': isUpperCase, 'invalid': !isUpperCase }">Une lettre majuscule</p>
+                                <p :class="{ 'valid': hasNumber, 'invalid': !hasNumber }">Un chiffre</p>
+                                <p :class="{ 'valid': isLengthValid, 'invalid': !isLengthValid }">8 caractères minimum </p>
                             </div>
 
                             <div class="mb-3">
                                 <label for="confirmPassword" class="form-label">Vérification mot de passe </label>
-                                <input type="password" class="form-control" id="confirmPassword"
+                                <input type="password" class="form-control" v-model="values.password2"
                                     placeholder="Confirmer mot de passe" required>
-                                <small id="passwordHelp" class="form-text text-muted">Entrez le même mot de passe
-                                </small>
+                                <small id="passwordHelp" class="form-text text-muted">Entrez le même mot de passe</small>
                             </div>
 
-                            <div class="messageError" id="messageError"></div>
+                            <div class="messageError" v-if="passwordErrorMessage">{{ passwordErrorMessage }}</div>
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-primary" id="submit">S'inscrire !</button>
+                                <button type="submit" class="btn btn-primary">S'inscrire !</button>
                             </div>
 
                         </form>
@@ -48,80 +52,81 @@
     </div>
 </template>
 
-
 <script>
 export default {
-    name: 'MyRegister',
-    mounted() {
-        const values = {
-            username: '',
-            email: '',
-            password1: '',
-            password2: ''
+    data() {
+        return {
+            values: {
+                username: '',
+                email: '',
+                password1: '',
+                password2: ''
+            },
+            passwordErrorMessage: ''
         };
-
-        const events = [
-            { id: 'username', type: 'change', handler: handleUsernameChange },
-            { id: 'email', type: 'change', handler: handleEmailChange },
-            { id: 'password', type: 'change', handler: handlePasswordChange },
-            { id: 'confirmPassword', type: 'change', handler: handleConfirmPasswordChange },
-            { id: 'submit', type: 'submit', handler: handleSubmit }
-        ];
-
-        function handleUsernameChange(e) {
-            values.username = e.target.value;
+    },
+    computed: {
+        isLowerCase() {
+            return /[a-z]/.test(this.values.password1);
+        },
+        isUpperCase() {
+            return /[A-Z]/.test(this.values.password1);
+        },
+        hasNumber() {
+            return /\d/.test(this.values.password1);
+        },
+        isLengthValid() {
+            return this.values.password1.length >= 8;
         }
-
-        function handleEmailChange(e) {
-            values.email = e.target.value;
-        }
-
-        function handlePasswordChange(e) {
-            values.password1 = e.target.value;
-            confirmPasswords();
-        }
-
-        function handleConfirmPasswordChange(e) {
-            values.password2 = e.target.value;
-            confirmPasswords();
-        }
-
-        function confirmPasswords() {
-            var passwordError = document.getElementById("messageError");
-
-            if (values.password1 === "" || values.password2 === "") {
+    },
+    methods: {
+        confirmPasswords() {
+            if (this.values.password1 === "" || this.values.password2 === "") {
+                this.passwordErrorMessage = '';
                 return false;
             } else {
-                if (values.password1 !== values.password2) {
-                    passwordError.innerHTML = "Les mots de passe ne correspondent pas. Réessayez.";
+                if (this.values.password1 !== this.values.password2) {
+                    this.passwordErrorMessage = "Les mots de passe ne correspondent pas. Réessayez.";
                     return false;
                 } else {
-                    passwordError.innerHTML = "";
+                    this.passwordErrorMessage = '';
                     return true;
                 }
             }
+        },
+        validateForm() {
+            this.confirmPasswords();
+            // Ajoutez le reste de votre logique de validation ici
         }
-
-        function handleSubmit(e) {
-            e.preventDefault();
-            console.log(values);
-            window.alert("ATTENTIIIIOOOON");
-        }
-
-        // Attach event listeners
-        events.forEach(event => {
-            document.getElementById(event.id).addEventListener(event.type, event.handler);
-        });
     }
-}
+};
 </script>
 
 <style>
 main {
     margin-top: 175px;
 }
-.messageError {
-    color: red
-}
-</style>
 
+.messageError {
+    color: red;
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -7px;
+    content: "✕ ";
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -7px;
+    content: "✓ ";
+}</style>
