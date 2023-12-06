@@ -128,9 +128,7 @@ export default {
 </script>
 
 <style>
-main {
-  margin-top: 175px;
-}
+
 .messageError {
   color: red;
 }

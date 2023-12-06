@@ -13,6 +13,11 @@ import MyLogin from './components/MyLogin.vue'
 // Importe Register component
 import MyRegister from './components/MyRegister.vue'
 
+// Importe Shop component
+import MyShop from './components/MyShop.vue'
+
+
+
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -25,6 +30,7 @@ const router = createRouter({
       { path: "/", component: MyHome },
       { path: "/login", component: MyLogin },
       { path: "/register", component: MyRegister},
+      { path: "/shop", component: MyShop},
     ],
 });
 
