@@ -25,14 +25,14 @@
 
 import NavBar from "./components/NavBar.vue";
 import MyFooter from "./components/MyFooter.vue";
-import MyLogin2 from "./components/MyLogin.vue";
+
 
 export default {
   name: "App",
   components: {
     NavBar,
     MyFooter,
-    MyLogin2,
+    
     
   },
 
