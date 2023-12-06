@@ -24,24 +24,28 @@ function hashPassword(password) {
 }
 
 // Fonction pour insérer un utilisateur dans la table
-function insertUser(username, email, password) {
+function insertUser(username, email, password, callback) {
     bcrypt.hash(password, 10, function (err, hash) {
         if (err) {
             console.error(err.message);
+            callback(false);
             return;
         }
-        // console.log('Mot de passe hashé : ' + hash)
 
         const query = 'INSERT INTO user (username, email, password) VALUES (?, ?, ?)';
         db.run(query, [username, email, hash], function (err) {
             if (err) {
                 console.error(err.message);
+                callback(false);
                 return;
             }
+
             console.log(`Utilisateur inséré avec l'ID ${this.lastID}`);
+            callback(true);
         });
-    })
+    });
 }
+
 
 // Fonction pour récupérer tous les utilisateurs de la table
 function getAllUsers(callback) {
