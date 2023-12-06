@@ -4,6 +4,7 @@
     <MyHome msg="Ceci est le projet" />
     <MyLiaison />
     <MyFooter />
+    <MyLogin2 />
   </body>
 </template>
 
@@ -13,6 +14,7 @@
 import NavBar from "./components/NavBar.vue";
 import MyHome from "./components/MyHome.vue";
 import MyFooter from "./components/MyFooter.vue";
+import MyLogin2 from "./components/MyLogin.vue";
 
 export default {
   name: "App",
@@ -20,6 +22,8 @@ export default {
     NavBar,
     MyHome,
     MyFooter,
+    MyLogin2,
+    
   },
 
 };
