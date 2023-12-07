@@ -68,7 +68,7 @@
             </div>
             <br><br><br><br><br><br>
             <div class="row">
-                <h2>List des cards de notre Base</h2>
+                <h2>Liste des cards de notre BDD</h2>
             </div>
             <br><br>
             <div class="row">

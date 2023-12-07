@@ -8,19 +8,19 @@
           </div>
           <div class="card-body">
             <p v-if="registerSucess == null"></p>
-            <p class="success" v-if="registerSucess">User created</p>
-            <p class="error" v-else>Creation impossible</p>
+            <p class="success" v-else-if="registerSucess">Incription réussie</p>
+            <p class="error" v-else>Les identifiants sont incorrects</p>
             <router-link to="/login"> </router-link>
             <router-view />
 
             <form @submit.prevent="register" method="POST" id="registrationForm" action="/login">
               <div class="mb-3">
-                <label for="username" class="form-label">Pseudonyme</label>
+                <label for="username" class="form-label">Identifiant</label>
                 <input type="text" class="form-control" name="username" id="username" v-model="username" required />
               </div>
 
               <div class="mb-3">
-                <label for="email" class="form-label">Adresse mail</label>
+                <label for="email" class="form-label">Adresse e-mail</label>
                 <input type="email" class="form-control" name="email" id="email" v-model="email" required />
               </div>
 
@@ -39,7 +39,7 @@
               </div>
 
               <div class="mb-3">
-                <label for="password2" class="form-label">Vérification mot de passe </label>
+                <label for="password2" class="form-label">Vérification du mot de passe</label>
                 <input type="password" class="form-control" id="password2" v-model="password2" @input="validateForm"
                   placeholder="Confirmer mot de passe" required />
                 <small id="passwordHelp" class="form-text text-muted">Entrez le même mot de passe</small>
