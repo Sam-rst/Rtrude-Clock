@@ -66,6 +66,10 @@
                     </div>
                 </form>
             </div>
+            <br><br><br><br><br><br>
+            <div class="row">
+                <h2>List des cards de notre Base</h2>
+            </div>
             <br><br>
             <div class="row">
                 <div class="col-12 col-md-4 col-lg-3 mb-5" v-for="card in cards" :key="card.id">

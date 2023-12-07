@@ -6,7 +6,7 @@
 
     <div class="menu-item">
       <div class="menu-text">
-        <a href="/">Accueil</a>
+        <a href="/">Produit</a>
       </div>
       <div class="sub-menu">
 
@@ -32,57 +32,55 @@
 
 
 
-
-
     <div class="menu-item highlight">
       <div class="menu-text">
-        <a href="#">Panier</a>
+        <a href="/shop">Magasin</a>
       </div>
       <div class="sub-menu double">
         <div class="icon-box gb a">
-          <div class="icon"><i class="far fa-question-circle"></i></div>
+          <div class="icon"><i class="far fa-shopping-cart"></i></div>
           <div class="text">
-            <div class="title">Consult <i class="far fa-arrow-right"></i></div>
-            <div class="sub-text">From Professionals</div>
+            <div class="title">Explore <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">Shopping Options</div>
           </div>
         </div>
         <div class="icon-box gb b">
-          <div class="icon"><i class="far fa-users-class"></i></div>
+          <div class="icon"><i class="far fa-tags"></i></div>
           <div class="text">
-            <div class="title">Teach <i class="far fa-arrow-right"></i></div>
-            <div class="sub-text">In Classroom</div>
+            <div class="title">Discover <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">Special Deals</div>
           </div>
         </div>
         <div class="icon-box gb c">
-          <div class="icon"><i class="far fa-school"></i></div>
+          <div class="icon"><i class="far fa-credit-card"></i></div>
           <div class="text">
-            <div class="title">Learn <i class="far fa-arrow-right"></i></div>
-            <div class="sub-text">By Video</div>
+            <div class="title">Shop <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">Securely Online</div>
           </div>
         </div>
         <div class="icon-box gb d">
-          <div class="icon"><i class="far fa-chess-rook"></i></div>
+          <div class="icon"><i class="far fa-gift"></i></div>
           <div class="text">
-            <div class="title">Keep <i class="far fa-arrow-right"></i></div>
-            <div class="sub-text">The Castle</div>
+            <div class="title">Gift Ideas <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">For Every Occasion</div>
           </div>
         </div>
         <div class="icon-box gb e">
-          <div class="icon"><i class="far fa-video-plus"></i></div>
+          <div class="icon"><i class="far fa-star"></i></div>
           <div class="text" onclick="#">
-            <div class="title">Become <i class="far fa-arrow-right"></i></div>
-            <div class="sub-text">A Creator</div>
+            <div class="title">Featured Products <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">Top Picks Just For You</div>
           </div>
         </div>
         <div class="icon-box gb f">
-          <div class="icon"><i class="far fa-cat"></i></div>
+          <div class="icon"><i class="far fa-shopping-bag"></i></div>
           <div class="text">
-            <div class="title">Understand <i class="far fa-arrow-right"></i></div>
-            <div class="sub-text">Our Journey</div>
+            <div class="title">Shopping Guide <i class="far fa-arrow-right"></i></div>
+            <div class="sub-text">Tips and Tricks</div>
           </div>
         </div>
         <div class="bottom-container">
-          Ready to dive in? <a href="#">Get Started</a>
+          Ready to start shopping? <a href="/shop">Browse Now</a>
         </div>
         <div class="sub-menu-holder"></div>
       </div>
@@ -91,31 +89,33 @@
 
 
 
+
+
     <div class="menu-item highlight">
       <div class="menu-text">
-        <a href="#">Support</a>
+        <a href="/about">Support</a>
       </div>
       <div class="sub-menu triple">
         <div class="top-container gb c icon-box">
-          <div class="icon big"><i class="far fa-book"></i></div>
+          <div class="icon big"><i class="far fa-life-ring"></i></div>
           <div class="text">
-            <div class="title">Noous Consernant</div>
-            <div class="sub-text">Find out where to begin below</div>
+            <div class="title"><a href="/about">About Us</a></div>
+            <div class="sub-text">Learn more about our support services</div>
           </div>
         </div>
         <div class="box">
-          <h3>Your Journey</h3>
+          <h3>Your Support Journey</h3>
           <a href="#">Get Started</a>
           <a href="#">Learn the Basics</a>
-          <a href="#">Get Advanced</a>
-          <a href="#">Start Teaching</a>
+          <a href="#">Get Advanced Support</a>
+          <a href="#">Start Teaching Support</a>
         </div>
         <div class="box">
-          <h3>Your Tools</h3>
-          <a href="#">Turbo Editor</a>
-          <a href="#">Time Stopper</a>
-          <a href="#">Brain Enhancer</a>
-          <a href="#">Network Maker</a>
+          <h3>Your Support Tools</h3>
+          <a href="#">Support Hub</a>
+          <a href="#">Knowledge Base</a>
+          <a href="#">Issue Tracker</a>
+          <a href="#">Community Forum</a>
         </div>
         <div class="icon-box flat">
           <div class="icon"><i class="fal fa-plug"></i></div>
@@ -132,17 +132,18 @@
         <div class="icon-box flat">
           <div class="icon"><i class="fal fa-phone-volume"></i></div>
           <div class="text">
-            <div class="title">Live Chat <i class="far fa-arrow-right"></i></div>
+            <div class="title">Live Chat Support <i class="far fa-arrow-right"></i></div>
           </div>
         </div>
         <div class="icon-box flat">
           <div class="icon"><i class="fal fa-book-spells"></i></div>
           <div class="text">
-            <div class="title">Documentation <i class="far fa-arrow-right"></i></div>
+            <div class="title">Support Documentation <i class="far fa-arrow-right"></i></div>
           </div>
         </div>
       </div>
     </div>
+
 
 
 
@@ -254,7 +255,7 @@ nav .menu-text a {
 }
 
 nav .menu-text a {
-    text-decoration: none; 
+  text-decoration: none;
 }
 
 nav .menu-text a:hover {
@@ -339,7 +340,7 @@ nav .menu-item:nth-of-type(4):hover~#sub-menu-container #sub-menu-holder {
   opacity: 0;
   font-weight: initial;
   padding: 1.5em;
-  
+
   transition: all 0.25s ease-out, opacity 0.25s ease-in, margin-left 0.25s ease-out, clip-path 0.15s ease-out;
 }
 

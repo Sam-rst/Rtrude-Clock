@@ -16,6 +16,9 @@ import MyRegister from './components/MyRegister.vue'
 // Importe Shop component
 import MyShop from './components/MyShop.vue'
 
+// Importe About component
+import MyAbout from './components/MyAbout.vue'
+
 
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -31,6 +34,7 @@ const router = createRouter({
       { path: "/login", component: MyLogin },
       { path: "/register", component: MyRegister},
       { path: "/shop", component: MyShop},
+      { path: "/about", component: MyAbout}
     ],
 });
 
