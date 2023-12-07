@@ -14,6 +14,9 @@
       <router-link to="/register">
       </router-link>
 
+      <router-link to="/about">
+      </router-link>
+
       <router-view />
     </main>
 
