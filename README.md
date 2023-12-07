@@ -5,9 +5,9 @@
 Rtrude est un site e-commerce vendant des meubles de très très haute qualité sans pour autant que vous dépensiez des milliers de pièces. Chaque siège coûte aux alentours de quelques menus kebabs, ce sont des AFFAIRES EN OR !!
 
 Projet réalisé par :
+- Sam-rst (Samuel RESSIOT)
 - Powlair (Paul CLAVERIE)
 - Comaaa (Bastien ROUPERT)
-- Sam-rst (Samuel RESSIOT)
 
 
 
